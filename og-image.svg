@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#94a3b8" stroke-opacity=".07"/></pattern>
+    <radialGradient id="glow" cx="85%" cy="0%" r="70%"><stop offset="0" stop-color="#5eead4" stop-opacity=".18"/><stop offset="1" stop-color="#5eead4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#5eead4" stop-opacity=".5"/><stop offset="1" stop-color="#fbbf24" stop-opacity=".8"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0f14"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g font-family="DejaVu Sans Mono, JetBrains Mono, Menlo, monospace">
+    <text x="80" y="120" font-size="26" fill="#5eead4">~/vmt <tspan fill="#9aa8b6">· Da Nang, Vietnam</tspan></text>
+  </g>
+  <g font-family="Inter, DejaVu Sans, Helvetica, Arial, sans-serif">
+    <text x="78" y="250" font-size="96" font-weight="800" fill="#e6edf3" letter-spacing="-3">Vo Minh Tri</text>
+    <text x="80" y="320" font-size="44" font-weight="600" fill="#9aa8b6">Data Engineer</text>
+    <text x="80" y="390" font-size="27" fill="#e6edf3">Cloud ETL pipelines, batch jobs &amp; data services on GCP</text>
+    <text x="80" y="430" font-size="27" fill="#e6edf3">4+ years Python &amp; SQL · for Japanese clients</text>
+  </g>
+
+  <!-- metrics strip -->
+  <g font-family="DejaVu Sans Mono, JetBrains Mono, Menlo, monospace">
+    <rect x="80" y="485" width="1040" height="80" rx="16" fill="#11171f" stroke="#233040"/>
+    <text x="115" y="535" font-size="26" fill="#fbbf24" font-weight="700">~8× <tspan fill="#9aa8b6" font-weight="400" font-size="20">faster batch</tspan></text>
+    <text x="405" y="535" font-size="26" fill="#fbbf24" font-weight="700">840+ <tspan fill="#9aa8b6" font-weight="400" font-size="20">merged PRs</tspan></text>
+    <text x="680" y="535" font-size="26" fill="#fbbf24" font-weight="700">17k+ <tspan fill="#9aa8b6" font-weight="400" font-size="20">tests in CI</tspan></text>
+    <text x="945" y="535" font-size="26" fill="#5eead4" font-weight="700">GCP · BQ</text>
+  </g>
+
+  <!-- mini pipeline -->
+  <g fill="none" stroke="url(#edge)" stroke-width="3" stroke-dasharray="4 10" stroke-linecap="round">
+    <path d="M880 190 C 930 190, 930 250, 980 250"/>
+    <path d="M880 310 C 930 310, 930 250, 980 250"/>
+    <path d="M1060 250 L 1098 250"/>
+  </g>
+  <g font-family="DejaVu Sans Mono, JetBrains Mono, monospace" font-size="17" text-anchor="middle" fill="#e6edf3">
+    <rect x="800" y="168" width="80" height="44" rx="10" fill="#161e28" stroke="#2f3f52"/><text x="840" y="196">Box</text>
+    <rect x="800" y="288" width="80" height="44" rx="10" fill="#161e28" stroke="#2f3f52"/><text x="840" y="316">GCS</text>
+    <rect x="980" y="225" width="80" height="50" rx="12" fill="#161e28" stroke="#5eead4"/><text x="1020" y="256">Run</text>
+    <rect x="1100" y="228" width="60" height="44" rx="10" fill="#161e28" stroke="#fbbf24"/><text x="1130" y="256">BQ</text>
+  </g>
+</svg>

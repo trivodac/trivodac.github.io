@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vo Minh Tri · Data Engineer (Python, SQL, GCP) · Da Nang</title>
+  <meta name="description" content="Vo Minh Tri is a Data Engineer in Da Nang, Vietnam with 4+ years in Python and SQL, building cloud ETL pipelines, batch jobs and data services on GCP for Japanese clients.">
+  <meta name="author" content="Vo Minh Tri">
+  <meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://trivodac.github.io/">
+
+  <!-- Open Graph / LinkedIn preview. Update the URLs if you deploy somewhere other than https://trivodac.github.io/ -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Vo Minh Tri">
+  <meta property="og:title" content="Vo Minh Tri · Data Engineer">
+  <meta property="og:description" content="Data Engineer with 4+ years in Python &amp; SQL, building cloud ETL pipelines, batch jobs and data services on GCP for Japanese clients.">
+  <meta property="og:url" content="https://trivodac.github.io/">
+  <meta property="og:image" content="https://trivodac.github.io/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vo Minh Tri, Data Engineer: Python, SQL, GCP. Da Nang, Vietnam.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="vi_VN">
+  <meta property="profile:first_name" content="Tri">
+  <meta property="profile:last_name" content="Vo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vo Minh Tri · Data Engineer">
+  <meta name="twitter:description" content="Cloud ETL pipelines, batch jobs and data services on GCP. Python · SQL · BigQuery.">
+  <meta name="twitter:image" content="https://trivodac.github.io/og-image.png">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Set theme + language before first paint to avoid a flash -->
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+        var q = new URLSearchParams(location.search).get('lang');
+        var l = q || localStorage.getItem('lang');
+        if (l === 'vi') d.setAttribute('lang', 'vi');
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vo Minh Tri",
+    "jobTitle": "Data Engineer",
+    "email": "mailto:trithemoonlight3@gmail.com",
+    "url": "https://trivodac.github.io/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Da Nang", "addressCountry": "VN" },
+    "worksFor": { "@type": "Organization", "name": "DAC Data Technology Vietnam" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Danang University of Science and Technology" },
+    "knowsAbout": ["Python", "SQL", "BigQuery", "Google Cloud Platform", "ETL", "Cloud Run", "Vertex AI"],
+    "sameAs": ["https://www.linkedin.com/in/minh-tri-vo-7000a2285/", "https://github.com/trivodac"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Vo Minh Tri, back to top">
+        <span class="brand-mark" aria-hidden="true">vmt</span><span class="brand-cursor" aria-hidden="true">_</span>
+      </a>
+
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only" data-i18n="menu">Menu</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#impact" data-i18n="nav.impact">Impact</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="pill-btn lang-toggle" type="button" aria-label="Chuyển sang tiếng Việt" data-i18n-attr="aria-label:lang.aria">
+          <span class="lang-opt" data-lang="en">EN</span><span class="lang-sep" aria-hidden="true">/</span><span class="lang-opt" data-lang="vi">VI</span>
+        </button>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme" data-i18n-attr="aria-label:theme.toLight">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="status-chip"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.status">Open to Senior Data Engineer roles</span></p>
+        <h1 id="hero-title" class="hero-title">
+          <span class="hero-name">Vo Minh Tri</span>
+          <span class="hero-role">Data Engineer<span class="mono accent"> · Python · SQL · GCP</span></span>
+        </h1>
+        <p class="hero-pitch" data-i18n="hero.pitch">Data Engineer with 4+ years in Python &amp; SQL, building cloud ETL pipelines, batch jobs and data services on GCP for Japanese clients.</p>
+        <p class="hero-meta mono">
+          <span><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9.5" r="2.5" fill="currentColor"/></svg> <span data-i18n="hero.location">Da Nang, Vietnam</span></span>
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:trithemoonlight3@gmail.com">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <span data-i18n="cta.email">Email me</span>
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/minh-tri-vo-7000a2285/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.95c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.62V21h-4V9.75Z"/></svg>
+            LinkedIn<span class="sr-only" data-i18n="newtab">(opens in a new tab)</span>
+          </a>
+          <a class="btn btn-ghost" href="CV_Vo_Minh_Tri_Data_Engineer.pdf" download>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="cta.cv">Download CV</span> <span class="mono muted small">PDF</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Animated pipeline visual (decorative; summarised in the figcaption) -->
+      <figure class="hero-visual terminal">
+        <div class="terminal-bar" aria-hidden="true">
+          <span class="tdot"></span><span class="tdot"></span><span class="tdot"></span>
+          <span class="terminal-title mono">pipeline.dag</span>
+          <span class="terminal-state mono"><span class="pulse"></span>running</span>
+        </div>
+        <svg class="pipeline" viewBox="0 0 520 300" role="img" aria-labelledby="pipe-title">
+          <title id="pipe-title">Data pipeline: Box and Cloud Storage feed a Cloud Run orchestrator, which calls Vertex AI Gemini and loads BigQuery and Cloud SQL.</title>
+          <defs>
+            <linearGradient id="edge" x1="0" x2="1">
+              <stop offset="0" stop-color="var(--accent)" stop-opacity=".25"/>
+              <stop offset="1" stop-color="var(--accent-2)" stop-opacity=".55"/>
+            </linearGradient>
+          </defs>
+          <g class="edges" fill="none" stroke="url(#edge)" stroke-width="1.5">
+            <path id="e1" d="M118 70 C 160 70, 160 150, 200 150"/>
+            <path id="e2" d="M118 230 C 160 230, 160 150, 200 150"/>
+            <path id="e3" d="M300 150 L 330 150"/>
+            <path id="e4" d="M410 150 C 425 150, 425 90, 440 90"/>
+            <path id="e5" d="M410 150 C 425 150, 425 210, 440 210"/>
+          </g>
+          <g class="flows" fill="none" stroke-width="2.5" stroke-linecap="round">
+            <path class="flow f1" d="M118 70 C 160 70, 160 150, 200 150"/>
+            <path class="flow f2" d="M118 230 C 160 230, 160 150, 200 150"/>
+            <path class="flow f3" d="M300 150 L 330 150"/>
+            <path class="flow f4" d="M410 150 C 425 150, 425 90, 440 90"/>
+            <path class="flow f5" d="M410 150 C 425 150, 425 210, 440 210"/>
+          </g>
+          <g class="nodes mono">
+            <g class="node"><rect x="18" y="48" width="100" height="44" rx="10"/><text x="68" y="68" class="n-title">Box</text><text x="68" y="83" class="n-sub">source</text></g>
+            <g class="node"><rect x="18" y="208" width="100" height="44" rx="10"/><text x="68" y="228" class="n-title">GCS</text><text x="68" y="243" class="n-sub">source</text></g>
+            <g class="node node-core"><rect x="200" y="120" width="100" height="60" rx="12"/><text x="250" y="145" class="n-title">Cloud Run</text><text x="250" y="161" class="n-sub">+ Cloud Tasks</text></g>
+            <g class="node node-ai"><rect x="330" y="125" width="80" height="50" rx="12"/><text x="370" y="147" class="n-title">Gemini</text><text x="370" y="162" class="n-sub">Vertex AI</text></g>
+            <g class="node node-sink"><rect x="440" y="68" width="66" height="44" rx="10"/><text x="473" y="88" class="n-title">BQ</text><text x="473" y="103" class="n-sub">warehouse</text></g>
+            <g class="node node-sink"><rect x="440" y="188" width="66" height="44" rx="10"/><text x="473" y="208" class="n-title">SQL</text><text x="473" y="223" class="n-sub">Cloud SQL</text></g>
+          </g>
+        </svg>
+        <figcaption class="terminal-log mono" aria-hidden="true">
+          <span class="muted">$</span> run --env prod <span class="ok">✓ validate</span> <span class="ok">✓ transform</span> <span class="ok">✓ load</span><span class="caret"></span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section container" aria-labelledby="about-title">
+      <header class="section-head reveal">
+        <p class="eyebrow mono">01 <span aria-hidden="true">/</span> <span data-i18n="nav.about">About</span></p>
+        <h2 id="about-title" data-i18n="about.title">Pipelines that are fast, tested and observable</h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-i18n="about.p1">I'm a Data Engineer at <strong>DAC Data Technology Vietnam</strong> in Da Nang, with 4+ years of hands-on Python and SQL. I build cloud ETL pipelines, batch jobs and data services on Google Cloud, moving data from sources like Box and Cloud Storage through Cloud Run and Vertex AI (Gemini) into BigQuery and Cloud SQL.</p>
+          <p data-i18n="about.p2">Since August 2025 I've been a Data Engineer on our offshore team serving a Japanese advertising agency, where my work also covers technical design, estimation, code review and release merges. Before that I spent three years as a backend engineer on Python/Flask services. I like performance work, solid automated tests and CI that stays fast as a codebase grows.</p>
+        </div>
+        <aside class="about-card reveal" aria-label="Quick facts" data-i18n-attr="aria-label:about.factsLabel">
+          <div class="avatar" aria-hidden="true">
+            <!-- To use a photo: add assets/profile.jpg (square, ~400x400). It replaces the monogram automatically. -->
+            <img src="assets/profile.jpg" alt="" width="88" height="88" decoding="async">
+            <span class="avatar-mono mono">VT</span>
+          </div>
+          <dl class="facts">
+            <div><dt data-i18n="facts.role">Role</dt><dd>Data Engineer</dd></div>
+            <div><dt data-i18n="facts.base">Based in</dt><dd data-i18n="hero.location">Da Nang, Vietnam</dd></div>
+            <div><dt data-i18n="facts.focus">Focus</dt><dd data-i18n="facts.focusVal">GCP data pipelines &amp; services</dd></div>
+            <div><dt data-i18n="facts.langs">Languages</dt><dd data-i18n="facts.langsVal">English, Japanese (N5)</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ IMPACT (BENTO) ============ -->
+    <section id="impact" class="section container" aria-labelledby="impact-title">
+      <header class="section-head reveal">
+        <p class="eyebrow mono">02 <span aria-hidden="true">/</span> <span data-i18n="nav.impact">Impact</span></p>
+        <h2 id="impact-title" data-i18n="impact.title">The last 12 months, in numbers</h2>
+      </header>
+      <ul class="bento" role="list">
+        <li class="tile tile-speed reveal">
+          <p class="tile-label mono" data-i18n="impact.batchLabel">Batch step runtime</p>
+          <p class="tile-big"><span class="count" data-to="8">8</span>×<span class="tile-unit" data-i18n="impact.faster">faster</span></p>
+          <div class="bars" aria-hidden="true">
+            <div class="bar-row"><span class="mono">before</span><span class="bar bar-before" style="--w:100%"></span><span class="mono">~90 min</span></div>
+            <div class="bar-row"><span class="mono">after</span><span class="bar bar-after" style="--w:12.2%"></span><span class="mono">~11 min</span></div>
+          </div>
+          <p class="tile-desc" data-i18n="impact.batchDesc">Cut one production batch step from ~90 min to ~11 min.</p>
+        </li>
+        <li class="tile tile-ci reveal">
+          <p class="tile-label mono" data-i18n="impact.ciLabel">CI pipeline</p>
+          <p class="tile-big">&gt;25<span class="arrow" aria-hidden="true">→</span>~8<span class="tile-unit">min</span></p>
+          <p class="tile-desc" data-i18n="impact.ciDesc">CI for a <strong>17,000+</strong> test suite, sped up with parallel sharding.</p>
+        </li>
+        <li class="tile reveal">
+          <p class="tile-big"><span class="count" data-to="840">840</span>+</p>
+          <p class="tile-desc" data-i18n="impact.prs">merged pull requests</p>
+        </li>
+        <li class="tile reveal">
+          <p class="tile-big"><span class="count" data-to="1700" data-sep="1">1,700</span>+</p>
+          <p class="tile-desc" data-i18n="impact.commits">commits</p>
+        </li>
+        <li class="tile reveal">
+          <p class="tile-big"><span class="count" data-to="15">15</span></p>
+          <p class="tile-desc" data-i18n="impact.repos">production repositories</p>
+        </li>
+        <li class="tile tile-tests reveal">
+          <p class="tile-big"><span class="count" data-to="120">120</span>+</p>
+          <p class="tile-desc" data-i18n="impact.tests">unit tests on a BigQuery → Gemini → BigQuery ETL</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section container" aria-labelledby="exp-title">
+      <header class="section-head reveal">
+        <p class="eyebrow mono">03 <span aria-hidden="true">/</span> <span data-i18n="nav.experience">Experience</span></p>
+        <h2 id="exp-title" data-i18n="exp.title">Where I've worked</h2>
+      </header>
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-card">
+            <p class="tl-date mono"><time datetime="2025-08">Aug 2025</time> – <span data-i18n="exp.present">Present</span></p>
+            <h3>Data Engineer <span class="tl-company">· DAC Data Technology Vietnam</span></h3>
+            <p class="tl-sub" data-i18n="exp.j1.sub">Offshore team for a Japanese advertising agency</p>
+            <ul class="tl-points">
+              <li data-i18n="exp.j1.b1">Responsibilities include technical design, estimation, code review and release merges.</li>
+              <li data-i18n="exp.j1.b2">Build cloud ETL pipelines, batch jobs and data services on GCP: Cloud Run, Cloud Tasks, BigQuery, Cloud SQL, Vertex AI.</li>
+              <li data-i18n="exp.j1.b3">Cut a batch step from ~90 to ~11 min and CI for 17,000+ tests from &gt;25 to ~8 min.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li><li>BigQuery</li><li>Cloud Run</li><li>Cloud Tasks</li><li>Cloud SQL</li><li>Vertex AI</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-card">
+            <p class="tl-date mono"><time datetime="2022-08">Aug 2022</time> – <time datetime="2025-07">Jul 2025</time></p>
+            <h3>Software Engineer (Backend) <span class="tl-company">· DAC Data Technology Vietnam</span></h3>
+            <p class="tl-sub">Python / Flask</p>
+            <ul class="tl-points">
+              <li data-i18n="exp.j2.b1">Refactored database access with SQLAlchemy to improve performance.</li>
+              <li data-i18n="exp.j2.b2">Wrote unit tests with pytest and integrated Microsoft SSO.</li>
+              <li data-i18n="exp.j2.b3">Worked on microservices for data analysis and data scraping.</li>
+              <li data-i18n="exp.j2.b4">Built ETL workflows on BigQuery, Cloud Storage and Cloud Functions.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Flask</li><li>SQLAlchemy</li><li>pytest</li><li>Microsoft SSO</li><li>BigQuery</li><li>Cloud Functions</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section container" aria-labelledby="proj-title">
+      <header class="section-head reveal">
+        <p class="eyebrow mono">04 <span aria-hidden="true">/</span> <span data-i18n="nav.projects">Projects</span></p>
+        <h2 id="proj-title" data-i18n="proj.title">Featured work</h2>
+        <p class="section-note" data-i18n="proj.note">Client work, so names are kept anonymous and code is private.</p>
+      </header>
+      <ul class="projects" role="list">
+        <li class="project project-wide reveal">
+          <p class="project-idx mono">p.01</p>
+          <h3 data-i18n="p1.title">AI-driven ad-operations workflow platform</h3>
+          <p class="project-client mono" data-i18n="p1.client">Japanese advertising agency · for a major automotive brand</p>
+          <p data-i18n="p1.desc">An orchestrator with a multi-lane pipeline. Long-running work runs on Cloud Run and Cloud Tasks with run locks. Files are ingested from Box and GCS into Cloud SQL, failures alert in Microsoft Teams, and CI runs in parallel shards.</p>
+          <ul class="tags"><li>Cloud Run</li><li>Cloud Tasks</li><li>Cloud SQL</li><li>Box API</li><li>GCS</li><li>Teams alerts</li><li>CI sharding</li></ul>
+        </li>
+        <li class="project reveal">
+          <p class="project-idx mono">p.02</p>
+          <h3 data-i18n="p2.title">TV-commercial log matching ETL</h3>
+          <p class="project-flow mono" aria-label="BigQuery to Gemini to BigQuery">BigQuery <span>→</span> Gemini <span>→</span> BigQuery</p>
+          <p data-i18n="p2.desc">A batch ETL that uses Gemini on Vertex AI to match TV-commercial logs. It runs as a Cloud Run Job with Cloud Logging and is covered by unit and integration tests.</p>
+          <ul class="tags"><li>Vertex AI</li><li>Cloud Run Jobs</li><li>Cloud Logging</li><li>pytest</li></ul>
+        </li>
+        <li class="project reveal">
+          <p class="project-idx mono">p.03</p>
+          <h3 data-i18n="p3.title">Material Database Tool</h3>
+          <p data-i18n="p3.desc">Generates upload sheets for <strong>30+</strong> ad-platform formats, with validators, an API gateway with API keys, and API-quota metering and caching.</p>
+          <ul class="tags"><li>Flask</li><li>REST API</li><li>API keys</li><li>Caching</li><li>Validation</li></ul>
+        </li>
+        <li class="project reveal">
+          <p class="project-idx mono">p.04</p>
+          <h3 data-i18n="p4.title">Business planning studio, FY27–FY30</h3>
+          <p data-i18n="p4.desc">Built from scratch: a Flask + Node engine, golden tests with 100% core coverage, an approval workflow, an audit log and AI explanations.</p>
+          <ul class="tags"><li>Flask</li><li>Node</li><li>Golden tests</li><li>Audit log</li><li>LLM</li></ul>
+        </li>
+        <li class="project reveal">
+          <p class="project-idx mono">p.05</p>
+          <h3 data-i18n="p5.title">AI agent tooling</h3>
+          <p data-i18n="p5.desc">MCP servers for Box and Backlog, plus Claude Code skills that help the team with estimation and code review.</p>
+          <ul class="tags"><li>MCP</li><li>Box</li><li>Backlog</li><li>Claude Code</li></ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section container" aria-labelledby="skills-title">
+      <header class="section-head reveal">
+        <p class="eyebrow mono">05 <span aria-hidden="true">/</span> <span data-i18n="nav.skills">Skills</span></p>
+        <h2 id="skills-title" data-i18n="skills.title">Tools I use every day</h2>
+      </header>
+      <div class="skills">
+        <div class="skill-group reveal">
+          <h3 class="mono"><span class="accent">&gt;</span> <span data-i18n="skills.lang">Languages &amp; data</span></h3>
+          <ul class="tags tags-lg"><li>Python</li><li>pandas</li><li>SQLAlchemy</li><li>Pydantic</li><li>Flask</li><li>SQL</li><li>BigQuery</li><li>MySQL</li><li>Dataform</li><li>Alembic</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="mono"><span class="accent">&gt;</span> Google Cloud</h3>
+          <ul class="tags tags-lg"><li>BigQuery</li><li>Cloud Storage</li><li>Cloud Run</li><li>Cloud Tasks</li><li>Cloud SQL</li><li>Cloud Functions</li><li>Secret Manager</li><li>Cloud Logging</li><li>Vertex AI</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="mono"><span class="accent">&gt;</span> <span data-i18n="skills.devops">DevOps &amp; quality</span></h3>
+          <ul class="tags tags-lg"><li>Docker</li><li>GitHub Actions</li><li>CircleCI</li><li>pytest</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="mono"><span class="accent">&gt;</span> <span data-i18n="skills.integrations">Integrations &amp; AI</span></h3>
+          <ul class="tags tags-lg"><li>REST APIs</li><li>Microsoft Graph</li><li>Entra ID SSO</li><li>LLM / Gemini</li><li>MCP</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & CERTS ============ -->
+    <section id="education" class="section container" aria-labelledby="edu-title">
+      <header class="section-head reveal">
+        <p class="eyebrow mono">06 <span aria-hidden="true">/</span> <span data-i18n="edu.eyebrow">Education</span></p>
+        <h2 id="edu-title" data-i18n="edu.title">Education &amp; certifications</h2>
+      </header>
+      <div class="edu-grid">
+        <article class="edu-card reveal">
+          <p class="tl-date mono"><time datetime="2018-10">Oct 2018</time> – <time datetime="2022-05">May 2022</time></p>
+          <h3 data-i18n="edu.school">Danang University of Science and Technology</h3>
+          <p data-i18n="edu.major">Information Technology, Network Information major</p>
+        </article>
+        <ul class="certs reveal" role="list" aria-label="Certifications" data-i18n-attr="aria-label:edu.certs">
+          <li><span class="cert-name">Google Cloud Associate Cloud Engineer</span><span class="cert-year mono">2024</span></li>
+          <li><span class="cert-name">PCAP · <span data-i18n="cert.pcap">Certified Associate in Python Programming</span></span><span class="cert-year mono">2024</span></li>
+          <li><span class="cert-name">PCEP · <span data-i18n="cert.pcep">Certified Entry-Level Python Programmer</span></span><span class="cert-year mono">2023</span></li>
+          <li><span class="cert-name">JLPT N5 · <span data-i18n="cert.jlpt">Japanese</span></span><span class="cert-year mono">2023</span></li>
+          <li><span class="cert-name">PSM I · Professional Scrum Master</span><span class="cert-year mono">2022</span></li>
+          <li><span class="cert-name">TOEIC 655</span><span class="cert-year mono">2022</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section container" aria-labelledby="contact-title">
+      <div class="contact-card reveal">
+        <p class="eyebrow mono">07 <span aria-hidden="true">/</span> <span data-i18n="nav.contact">Contact</span></p>
+        <h2 id="contact-title" data-i18n="contact.title">Let's talk about your data platform</h2>
+        <p class="contact-lead" data-i18n="contact.lead">I'm interested in Senior Data Engineer roles. The fastest way to reach me is email or LinkedIn.</p>
+        <div class="contact-row">
+          <a class="btn btn-primary btn-lg" href="mailto:trithemoonlight3@gmail.com">trithemoonlight3@gmail.com</a>
+          <button class="btn btn-ghost copy-btn" type="button" data-copy="trithemoonlight3@gmail.com">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <span class="copy-label" data-i18n="contact.copy">Copy email</span>
+          </button>
+        </div>
+        <ul class="social" role="list">
+          <li><a href="https://www.linkedin.com/in/minh-tri-vo-7000a2285/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.95c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.62V21h-4V9.75Z"/></svg>
+            LinkedIn<span class="sr-only" data-i18n="newtab">(opens in a new tab)</span></a></li>
+          <li><a href="https://github.com/trivodac" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            GitHub<span class="sr-only" data-i18n="newtab">(opens in a new tab)</span></a></li>
+          <li><a href="CV_Vo_Minh_Tri_Data_Engineer.pdf" download>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="cta.cv">Download CV</span></a></li>
+        </ul>
+        <p class="sr-only" aria-live="polite" id="copy-status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p class="mono small muted">© <span id="year">2026</span> Vo Minh Tri · <span data-i18n="footer.built">Hand-built with HTML, CSS &amp; JS. No frameworks.</span></p>
+    <a class="mono small" href="#top" data-i18n="footer.top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
