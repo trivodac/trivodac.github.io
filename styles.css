@@ -284,23 +284,22 @@ html[lang="vi"] .lang-opt[data-lang="vi"] { color: var(--accent); font-weight: 6
 .bar-after::after { background: var(--accent-2); }
 .js .tile-speed:not(.is-visible) .bar::after { transform: scaleX(0); }
 
+/* Bento layout
+   <720px : 2 cols  -> speed, ci, [prs][commits], repos (full), tests (full)
+   >=720px: 6 cols  -> speed (left, 2 rows) | ci / tests (right), then 3 stat tiles, 2 cols each */
+.bento > .tile:nth-child(5) { grid-column: span 2; }
+.tile-stat .tile-big { font-size: clamp(1.8rem, 7vw, 3rem); }
 @media (min-width: 720px) {
-  .bento { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .tile-speed { grid-column: span 2; grid-row: span 2; }
-  .tile-ci { grid-column: span 2; }
-  .tile-tests { grid-column: span 2; }
-  .tile-speed .tile-big { font-size: clamp(3.5rem, 8vw, 5rem); }
-}
-@media (min-width: 1000px) {
   .bento { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-  .tile-speed { grid-column: 1 / span 3; grid-row: 1 / span 2; }
-  .tile-ci { grid-column: 4 / span 3; }
-  .tile { grid-column: span 1; }
-  .bento > .tile:nth-child(3) { grid-column: 4 / span 1; }
-  .bento > .tile:nth-child(4) { grid-column: 5 / span 1; }
-  .bento > .tile:nth-child(5) { grid-column: 6 / span 1; }
-  .tile-tests { grid-column: 1 / -1; flex-direction: row; align-items: baseline; gap: 1rem; min-height: 0; }
-  .tile-tests .tile-big { margin: 0; }
+  .bento > .tile-speed { grid-column: 1 / span 3; grid-row: 1 / span 2; }
+  .bento > .tile-ci    { grid-column: 4 / span 3; grid-row: 1; }
+  .bento > .tile-tests { grid-column: 4 / span 3; grid-row: 2; }
+  .bento > .tile-stat  { grid-row: 3; }
+  .bento > .tile:nth-child(3) { grid-column: 1 / span 2; }
+  .bento > .tile:nth-child(4) { grid-column: 3 / span 2; }
+  .bento > .tile:nth-child(5) { grid-column: 5 / span 2; }
+  .tile-speed .tile-big { font-size: clamp(3.5rem, 7vw, 5rem); }
+  .tile-stat .tile-big { font-size: clamp(2.1rem, 4.5vw, 3rem); }
 }
 
 /* Timeline */
@@ -353,7 +352,7 @@ html[lang="vi"] .lang-opt[data-lang="vi"] { color: var(--accent); font-weight: 6
 .project .tags { margin-top: auto; padding-top: .5rem; }
 @media (min-width: 720px) {
   .projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .project-wide { grid-column: 1 / -1; }
+  .project-wide { grid-column: span 2; }
   .project-wide > p:not(.project-idx):not(.project-client) { max-width: 52rem; }
 }
 
